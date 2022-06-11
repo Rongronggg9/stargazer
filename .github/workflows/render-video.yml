@@ -12,11 +12,37 @@ on:
       starCount:
         description: "Star Count"
         required: true
-        default: 100
+        default: "100"
+      showLogin:
+        description: "Show stargazers' login names as well as their names"
+        required: true
+        type: boolean
+        default: false
+      showRepo:
+        description: "Show the repo name in each stargazer card"
+        required: true
+        type: boolean
+        default: true
       duration:
         description: "Duration (seconds)"
         required: false
-        default: 15
+        default: "15"
+      fps:
+        description: "Framerate (FPS)"
+        required: false
+        default: "30"
+      width:
+        description: "Width (px)"
+        required: false
+        default: "960"
+      height:
+        description: "Height (px)"
+        required: false
+        default: "540"
+      scale:
+        description: "Scale (recommended: width/512)"
+        required: false
+        default: "1.875"
 name: Render video
 jobs:
   render:
